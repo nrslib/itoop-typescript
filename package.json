@@ -1,0 +1,50 @@
+{
+  "name": "itoop-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts",
+
+    "start:base01": "npm run build:live:base01",
+    "build:live:base01": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/base/01/index.ts",
+    "start:base02": "npm run build:live:base02",
+    "build:live:base02": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/base/02/index.ts",
+    "start:base03": "npm run build:live:base03",
+    "build:live:base03": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/base/03/index.ts",
+    "start:base04": "npm run build:live:base04",
+    "build:live:base04": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/base/04/index.ts",
+    "start:base05": "npm run build:live:base05",
+    "build:live:base05": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/base/05/index.ts",
+    "start:base06": "npm run build:live:base06",
+    "build:live:base06": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/base/06/index.ts",
+    "start:base07": "npm run build:live:base07",
+    "build:live:base07": "nodemon --watch 'src/**/*.ts' -L --exec \\\"ts-node\\\" src/sample/07/index.ts",
+
+    "start:sample01": "npm run build:live:sample01",
+    "build:live:sample01": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/sample/01/index.ts",
+    "start:sample02": "npm run build:live:sample02",
+    "build:live:sample02": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/sample/02/index.ts",
+    "start:sample03": "npm run build:live:sample03",
+    "build:live:sample03": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/sample/03/index.ts",
+    "start:sample04": "npm run build:live:sample04",
+    "build:live:sample04": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/sample/04/index.ts",
+    "start:sample05": "npm run build:live:sample05",
+    "build:live:sample05": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/sample/05/index.ts",
+    "start:sample06": "npm run build:live:sample06",
+    "build:live:sample06": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/sample/06/index.ts",
+    "start:sample07": "npm run build:live:sample07",
+    "build:live:sample07": "nodemon --watch 'src/**/*.ts' -L --exec \"ts-node\" src/sample/07/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
