@@ -1,7 +1,7 @@
 import Display from "./displays/Display";
 import Rule from "./rules/Rule";
-import NormalRule from "../../sample/05/rules/NormalRule";
-import ReverseRule from "../../sample/05/rules/ReverseRule";
+import NormalRule from "./rules/NormalRule";
+import ReverseRule from "./rules/ReverseRule";
 
 export default class JankenGame {
     // TODO: Rule を引数で受け取るように書き換えよう
