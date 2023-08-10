@@ -10,17 +10,17 @@ function play(leftHand: number, rightHand: number) {
 function judge(leftHand: number, rightHand: number): number {
     if (leftHand === 0) { // Goo
         if (rightHand === 0) { // Goo
-            return 0
+            return 2
         } else if (rightHand === 1) { // Choki
             return 1
         } else { // Par
-            return -1
+            return 3
         }
     } else if (leftHand === 1) { // Choki
         if (rightHand === 0) { // Goo
-            return -1
+            return 3
         } else if (rightHand === 1) { // Choki
-            return 0
+            return 2
         } else { // Par
             return 1
         }
@@ -28,9 +28,9 @@ function judge(leftHand: number, rightHand: number): number {
         if (rightHand === 0) { // Goo
             return 1
         } else if (rightHand === 1) { // Choki
-            return -1
+            return 3
         } else { // Par
-            return 0
+            return 2
         }
     }
 }
@@ -38,7 +38,7 @@ function judge(leftHand: number, rightHand: number): number {
 function showResult(result: number) {
     if (result === 1) {
         console.log("勝ち")
-    } else if (result === 0) {
+    } else if (result === 2) {
         console.log("引き分け")
     } else {
         console.log("負け")
